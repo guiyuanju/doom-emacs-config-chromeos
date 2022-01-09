@@ -67,6 +67,9 @@
 (map! :desc "Switch to previous window"
       :nvi "C-k" 'evil-window-prev)
 
+(map! :desc "Close window"
+      :nvi "C-w" '+workspace/close-window-or-workspace)
+
 ;;; general
 
 (map! :desc "Expand region"
