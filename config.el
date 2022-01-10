@@ -105,6 +105,9 @@
 (map! :desc "Substitute"
       :v "s" 'evil-substitute)
 
+(map! :desc "kill-line"
+      :nvi "C-k" 'kill-line)
+
 ;;; paredit
 
 (map! :map paredit-mode-map
@@ -114,6 +117,10 @@
 (map! :desc "Splice secp kill forward"
       :map paredit-mode-map
       :nvi "<next>" 'paredit-splice-sexp-killing-forward)
+
+(map! :desc "Structurally kill line"
+      :map paredit-mode-map
+      :nvi "C-k" 'paredit-kill)
 
 ;;; cider
 
