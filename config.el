@@ -61,6 +61,8 @@
   :init
   (setq evil-escape-unordered-key-sequence t)) ; enable "k j"
 
+;; Widndow management
+
 (map! :desc "Switch to next window"
       :nvi "C-j" 'evil-window-next)
 
@@ -83,6 +85,15 @@
 
 (map! :desc "Move to the end of a line in all modes"
       :nvi "C-e" 'doom/forward-to-last-non-comment-or-eol)
+
+(map! :desc "Undo"
+      :nvi "M-z" 'evil-undo)
+
+(map! :desc "Redo"
+      :nvi "M-Z" 'evil-redo)
+
+(map! :desc "Substitute"
+      :v "s" 'evil-substitute)
 
 ;;; cider
 
