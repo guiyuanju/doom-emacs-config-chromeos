@@ -72,7 +72,7 @@
 (map! :desc "Close window"
       :nvi "C-w" '+workspace/close-window-or-workspace)
 
-;;; general
+;;; Selection
 
 (map! :desc "Expand region"
       :nvi "C-=" 'er/expand-region)
@@ -80,11 +80,21 @@
 (map! :desc "Shrink region"
       :nvi "C--" 'er/contract-region)
 
+;;; Navigation
+
 (map! :desc "Move to the begining of a line in all modes"
       :nvi "C-a" 'doom/backward-to-bol-or-indent)
 
 (map! :desc "Move to the end of a line in all modes"
       :nvi "C-e" 'doom/forward-to-last-non-comment-or-eol)
+
+(map! :desc "Next line"
+      :nvi "C-n" 'next-line)
+
+(map! :desc "Previous line"
+      :nvi "C-p" 'previous-line)
+
+;;; Editing
 
 (map! :desc "Undo"
       :nvi "M-z" 'evil-undo)
