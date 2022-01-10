@@ -107,13 +107,13 @@
 
 ;;; paredit
 
-(map! :desc "Splice secp kill backward"
-      :map paredit-mode-map
-      :nvi "M-<up>" 'paredit-splice-sexp-killing-backward)
+(map! :map paredit-mode-map
+      :desc "Splice secp kill backward"
+      :nvi "<prior>" 'paredit-splice-sexp-killing-backward)
 
 (map! :desc "Splice secp kill forward"
       :map paredit-mode-map
-      :nvi "M-<up>" 'paredit-splice-sexp-killing-forward)
+      :nvi "<next>" 'paredit-splice-sexp-killing-forward)
 
 ;;; cider
 
