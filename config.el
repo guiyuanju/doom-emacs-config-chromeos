@@ -64,10 +64,10 @@
 ;; Widndow management
 
 (map! :desc "Switch to next window"
-      :nvi "C-j" 'evil-window-next)
+      :nvi "M-j" 'evil-window-next)
 
 (map! :desc "Switch to previous window"
-      :nvi "C-k" 'evil-window-prev)
+      :nvi "M-k" 'evil-window-prev)
 
 (map! :desc "Close window"
       :nvi "C-w" '+workspace/close-window-or-workspace)
