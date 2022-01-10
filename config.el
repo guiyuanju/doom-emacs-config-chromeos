@@ -122,6 +122,22 @@
       :map paredit-mode-map
       :nvi "C-k" 'paredit-kill)
 
+(map! :desc "Forward delete"
+      :map paredit-mode-map
+      :i "C-d" 'paredit-forward-delete)
+
+(map! :desc "Forward kill word"
+      :map paredit-mode-map
+      :i "M-d" 'paredit-forward-kill-word)
+
+(map! :desc "Backward delete"
+      :map paredit-mode-map
+      :i "<backspace>" 'paredit-backward-delete)
+
+(map! :desc "Backward kill word"
+      :map paredit-mode-map
+      :i "<delete>" 'paredit-backward-kill-word)
+
 ;;; cider
 
 (use-package! cider
