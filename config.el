@@ -105,6 +105,16 @@
 (map! :desc "Substitute"
       :v "s" 'evil-substitute)
 
+;;; paredit
+
+(map! :desc "Splice secp kill backward"
+      :map paredit-mode-map
+      :nvi "M-<up>" 'paredit-splice-sexp-killing-backward)
+
+(map! :desc "Splice secp kill forward"
+      :map paredit-mode-map
+      :nvi "M-<up>" 'paredit-splice-sexp-killing-forward)
+
 ;;; cider
 
 (use-package! cider
